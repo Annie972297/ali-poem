@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <!--<router-view/>-->
+    <poem-app/>
   </div>
 </template>
 
 <script>
+import PoemApp from './components/PoemApp.vue'
 export default {
+  components: { PoemApp },
   name: 'App'
 }
 </script>
@@ -18,6 +20,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+html,body{
+  height:100%;
 }
 </style>
